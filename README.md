@@ -4,44 +4,47 @@ The AdvancedBusTicketSystem enterprise-grade C# Windows Forms application target
 
 # Architecture
 
-AdvancedBusTicketSystem/
-├── Program.cs                            # WinForms Application Entry Point ([STAThread])
-├── App.config                            # .NET Framework 4.7.2 Configuration
-├── AdvancedBusTicketSystem.csproj        # MSBuild C# Project File
-├── AdvancedBusTicketSystem.sln           # Standalone Project Solution
-├── Properties/
-│   └── AssemblyInfo.cs                   # Assembly Metadata
-├── Domain/
-│   ├── Entities/
-│   │   ├── BaseEntity.cs                 # Base Guid Id, CreatedAt, IsActive
-│   │   ├── Bus.cs                        # Operator, LicensePlate, Capacity, BusType (VIP 2+1 vs Standard 2+2)
-│   │   ├── Route.cs                      # Origin, Destination, DistanceKm, BasePrice
-│   │   ├── Trip.cs                       # Route, Bus, DepartureDate, DepartureTime, TicketPrice
-│   │   ├── Customer.cs                   # FirstName, LastName, Phone, Email, IdentityNo, Gender
-│   │   └── Ticket.cs                     # PNR Code, TripId, SeatNumber, Customer, BookingDate, Status, PricePaid
-│   └── Enums/
-│       ├── Gender.cs                     # Male, Female, Other
-│       ├── BusType.cs                    # VIP_2x1, Standard_2x2
-│       ├── SeatStatus.cs                 # Available, Selected, ReservedMale, ReservedFemale, Blocked
-│       └── TicketStatus.cs               # Confirmed, Cancelled, Completed
-├── Data/
-│   ├── Repositories/
-│   │   ├── IRepository.cs / Repository.cs             # Generic Repository pattern with soft delete
-│   │   ├── ITripRepository.cs / TripRepository.cs     # Route & date filtered trip queries
-│   │   └── ITicketRepository.cs / TicketRepository.cs # PNR search & trip ticket occupancy queries
-│   └── Persistence/
-│       ├── AppDbContext.cs               # Singleton DbContext with data seeder & navigation linker
-│       └── JsonStorageService.cs         # JSON File Persistence (saves/loads data to DataStore/*.json)
-├── Services/
-│   ├── TicketService.cs                  # Booking validation, auto PNR generation, cancellation & refund
-│   ├── TripService.cs                    # Trip scheduling & seat occupancy status generator
-│   └── RevenueService.cs                 # Financial analytics (Revenue, Ticket Count, Occupancy %)
-└── UI/
-    ├── MainForm.cs / Designer            # Tabbed Dashboard (Booking Engine, Ticket Manager, Analytics, Fleet)
-    ├── BookingModalForm.cs / Designer    # Passenger Registration & Payment Dialog
-    ├── TicketDetailsForm.cs / Designer   # Printable Travel Voucher & Receipt Exporter
-    └── Controls/
-        └── BusSeatMapControl.cs          # Custom interactive seat layout renderer (2+1 VIP & 2+2 Standard)
+<ul>
+  <li>Program.cs</li>
+  <li>App.config</li>
+  <li>AdvancedBusTicketSystem.csproj</li>
+  <li>AdvancedBusTicketSystem.sln</li>
+  <li>Properties/AssemblyInfo.cs</li>
+
+  <li>Domain/Entities/BaseEntity.cs</li>
+  <li>Domain/Entities/Bus.cs</li>
+  <li>Domain/Entities/Route.cs</li>
+  <li>Domain/Entities/Trip.cs</li>
+  <li>Domain/Entities/Customer.cs</li>
+  <li>Domain/Entities/Ticket.cs</li>
+
+  <li>Domain/Enums/Gender.cs</li>
+  <li>Domain/Enums/BusType.cs</li>
+  <li>Domain/Enums/SeatStatus.cs</li>
+  <li>Domain/Enums/TicketStatus.cs</li>
+
+  <li>Data/Repositories/IRepository.cs</li>
+  <li>Data/Repositories/Repository.cs</li>
+  <li>Data/Repositories/ITripRepository.cs</li>
+  <li>Data/Repositories/TripRepository.cs</li>
+  <li>Data/Repositories/ITicketRepository.cs</li>
+  <li>Data/Repositories/TicketRepository.cs</li>
+
+  <li>Data/Persistence/AppDbContext.cs</li>
+  <li>Data/Persistence/JsonStorageService.cs</li>
+
+  <li>Services/TicketService.cs</li>
+  <li>Services/TripService.cs</li>
+  <li>Services/RevenueService.cs</li>
+
+  <li>UI/MainForm.cs</li>
+  <li>UI/MainForm.Designer.cs</li>
+  <li>UI/BookingModalForm.cs</li>
+  <li>UI/BookingModalForm.Designer.cs</li>
+  <li>UI/TicketDetailsForm.cs</li>
+  <li>UI/TicketDetailsForm.Designer.cs</li>
+  <li>UI/Controls/BusSeatMapControl.cs</li>
+</ul>
 
 
 # Key Features
