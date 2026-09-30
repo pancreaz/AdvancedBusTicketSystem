@@ -1,0 +1,8 @@
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\bin\Debug\AdvancedBusTicketSystem.exe.config
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\bin\Debug\AdvancedBusTicketSystem.exe
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\bin\Debug\AdvancedBusTicketSystem.pdb
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\obj\Debug\AdvancedBusTicketSystem.csproj.AssemblyReference.cache
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\obj\Debug\AdvancedBusTicketSystem.csproj.CoreCompileInputs.cache
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\obj\Debug\AdvancedBusTicketSystem.exe
+r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\obj\Debug\AdvancedBusTicketSystem.pdb
+R:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\obj\Debug\AdvancedBusTicketSystem.exe.config
