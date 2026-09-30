@@ -90,4 +90,5 @@ The AdvancedBusTicketSystem enterprise-grade C# Windows Forms application target
   </li>
 </ol>
 
-# Executable generated at: r:\Study\Learning\C#\Projects\OtobusTicketProject-master\OtobusTicketProject-master\AdvancedBusTicketSystem\bin\Debug\AdvancedBusTicketSystem.exe
+# Executable generated at: 
+AdvancedBusTicketSystem\bin\Debug\AdvancedBusTicketSystem.exe
